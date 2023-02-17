@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/navigation';
+// import WelcomePage from './components/WelcomePage';
+import TopNav from './components/TopNav';
+import HomePage from './components/HomePage/HomePage';
 
 function App() {
+  const handleMenu=()=>{
+    const navigation = document.getElementById('navigation');
+    const navBg = document.querySelector('.nav-bg')
+    if(navigation.style.width == '250px'){
+      navigation.style.width = '0px';
+      navBg.style.width ='0px';
+    }
+    else{
+      navigation.style.width = '250px';
+      navBg.style.width ='100vw'
+;    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='grid-2'>
+      <Navigation handleMenu={handleMenu}/>
+      <TopNav handleMenu={handleMenu}/>
+      <HomePage />
+    </section>
   );
 }
 
