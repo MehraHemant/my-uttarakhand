@@ -6,7 +6,7 @@ export default function WeatherDatails(props) {
     const [name, setName] = useState('')
 
     const fetchCity = async () => {
-        let url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=q8NIvGdHghXT5YOOm5mAF4uTlZEGsKce&q=${props.city}`
+        let url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=q8NIvGdHghXT5YOOm5mAF4uTlZEGsKce&q=${props.place}`
         const data = await fetch(url);
         const parseData = await data.json();
         setCityKey(parseData[0].Key);
@@ -41,8 +41,8 @@ export default function WeatherDatails(props) {
                         <div className='center'>{name}</div>
                         <div className='center'>Temperature</div>
                         <div className='center'>IconPhrase</div>
-                        <div className='center'>Today's Lowest: <br/>{element.Temperature.Minimum.Value}</div>
-                        <div className='center'>Today's Highest: <br/>{element.Temperature.Maximum.Value}</div>
+                        <div className='center'>Today's Lowest: <br/>{parseFloat((element.Temperature.Minimum.Value -32)/1.8).toFixed(2)}&deg;C</div>
+                        <div className='center'>Today's Highest: <br/>{parseFloat((element.Temperature.Maximum.Value -32)/1.8).toFixed(2)}&deg;C</div>
                         <div className='center'>Day: <br/>{element.Day.IconPhrase}</div>
                         <div className='center'>Night: <br/>{element.Night.IconPhrase}</div>
                     </div>

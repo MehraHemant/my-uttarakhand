@@ -77,7 +77,7 @@ export default function Carousel() {
               <li>Panoramic views of the Himalayas</li>
             </ul>
           </div>
-          <Weather place='valley of flower' />
+          <Weather place='valley of flower, uttarakhand' />
         </div>
 
         <div className='carousel-details'><img src={Auli} alt='img' className='carousel-img' />
@@ -90,7 +90,7 @@ export default function Carousel() {
               <li>Year round holiday site with superb views of the Himalayas.</li>
             </ul>
           </div>
-          <Weather place='joshimath' />
+          <Weather place='auli' />
         </div>
 
         <div className='carousel-details'><img src={Kedarnath} alt='img' className='carousel-img' />
