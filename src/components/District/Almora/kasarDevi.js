@@ -4,7 +4,7 @@ import kasar from './kasarDevi.jpeg'
 
 export default function KasarDevi() {
     return (
-        <div className='sub-page'>
+        <div className='sub-page almora'>
             <WeatherDatails place='Kasar, Uttarakhand' />
             <div className='distt-subpage'>
                 <h2>Kasar Devi Temple</h2>

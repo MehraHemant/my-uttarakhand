@@ -4,7 +4,7 @@ import WeatherDatails from '../Weather/WeatherDatails'
 
 export default function KatarmalSunTemple() {
     return (
-        <div className='sub-page'>
+        <div className='sub-page almora'>
             <WeatherDatails place='katarmal, Uttarakhand' />
             <div className=' distt-subpage'>
                 <h2>Katarmal Sun Temple</h2>
@@ -13,16 +13,6 @@ export default function KatarmalSunTemple() {
                 <aside>
                     <img src={katarmal} alt='' />
                     <h5>Katarmal Sun Temple at Katarmal</h5>
-                    <table>
-                        <tr>
-                            <td>Constructed by</td>
-                            <td>Katyuri Kings</td>
-                        </tr>
-                        <tr>
-                            <td>Date of Construction</td>
-                            <td>9th century CE</td>
-                        </tr>
-                    </table>
                 </aside>
                     The sun has been propitiated in India since ages immemorial and the Vedas have mentioned it as the store house of inexhaustible energy and radiance. There are several hymns in Vedic literature dedicated to the sun describing the celestial body as divine and the source and sustainer of all life in the universe. One of the famous hymns in praise of the sun is the Surya Upnishad. References of sun worship are also found in Puranas and the scriptures. The sun worship became more prominent with the vicissitudes of time and when Mayura - Bhatta one of the literates in the court of Harsha Vardhan in the 7th century A.D composed Surya Satkam in praise of the God Surya and it is believed that he was cured of his blindness. In Yajur Veda it has been mentioned that in the Himalayan region sun worship assumed an important place owing to the harsh climatic conditions. In Uttarakhand too it has been in vogue since ancient times and with the onset of winter it is believed that worshipping of sun at sunrise by giving oblations of water is very beneficial for health and energizes the human body to brave the cold. As the sun has moved to the southern hemisphere during this period and the region is blanketed with cold it has become customary to invoke the Sun God and the chanting of the Gayatri Mantra.
                 </div>

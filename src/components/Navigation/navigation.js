@@ -5,11 +5,10 @@ import {Link} from 'react-router-dom';
 export default function Navigation(props) {
 
   return (
-    <section>
-      <div className='nav-bg' onClick={props.handleMenu}></div>
+    <section className='nav-bg' onClick={props.handleMenu}>
       <div id='navigation'>
         <ul className='nav-container'>
-          <li className='nav-items webpage'><img src={menu} onClick={props.handleMenu} /><h2><Link to = '/'>Uttarakhand</Link></h2></li>
+          <li className='nav-items webpage'><img src={menu} onClick={props.handleMenu} /><h2><Link to = '/' onClick={props.handleMenu} >Uttarakhand</Link></h2></li>
           <li className='nav-items'><div>A</div><Link to='/almora' onClick={props.handleMenu}>Almora</Link></li>
           <li className='nav-items'><div>B</div><Link to='/bageshwar' onClick={props.handleMenu}>Bageshwar</Link></li>
           <li className='nav-items'><div>C</div><Link to='/chamoli' onClick={props.handleMenu}>Chamoli</Link></li>

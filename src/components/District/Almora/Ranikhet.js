@@ -4,7 +4,7 @@ import ranikhet from './Ranikhet.jpg'
 
 export default function Ranikhet() {
   return (
-    <div className='sub-page'>
+    <div className='sub-page almora'>
         <WeatherDatails place='ranikhet, uttarakhand'/>
         <div className='distt-subpage'>
             <h2>Ranikhet</h2>
